@@ -11,31 +11,29 @@ let computerSelection = computerPlay();
 function playRound(playerSelection, computerSelection) {
     
     if (playerSelection == 'rock' && computerSelection == 'paper') {
-    return "lose"
+        return "lose"
     } else if (playerSelection == 'paper' && computerSelection == 'scissors') {
-    return "lose"
+        return "lose"
     } else if (playerSelection == 'scissors' && computerSelection == 'rock') {
-    return "lose"
+        return "lose"
     } else if (playerSelection == 'rock' && computerSelection == 'scissors') {
-    return "win"
+        return "win"
     } else if (playerSelection == 'paper' && computerSelection == 'rock') {
-    return "win"
+        return "win"
     } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
-    return "win"
+        return "win"
     } else if (playerSelection == 'scissors' && computerSelection == 'scissors') {
-    return "tie"
+        return "tie"
     }  else if (playerSelection == 'rock' && computerSelection == 'rock') {
-    return "tie"
+        return "tie"
     } else if (playerSelection == 'paper' && computerSelection == 'paper') {
-    return "tie"
+        return "tie"
     } else {
-    return "invalid"
+        return "invalid"
     }
 }
 
 function game() {
-    
-    
     playerInput = prompt("Round " + roundNum + ": " + "Rock, Paper or Scissors");
     const playerSelection =  playerInput.toLowerCase();
     console.log(playerSelection);
