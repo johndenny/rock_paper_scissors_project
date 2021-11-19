@@ -1,0 +1,157 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #580000;
+    background-color: #ffbcbc;
+    color: #470000;
+    animation: buttonColor 5s infinite linear;
+}
+@keyframes buttonColor {
+    12.5% {
+    background-color: #ffb0da;
+    color: #470000;
+    }
+    25% {
+    background-color: #e7b8ff; 
+    color: #805300; 
+    }
+    37.5% {
+    background-color: #b3b3ff; 
+    color: #696900;
+    }
+    50% {
+    background-color: #b1ffff; 
+    color: #336600; 
+    }
+    62.5% {
+    background-color: #ccff99; 
+    color: #005757;
+
+    }
+    75% {
+    background-color: #ffff9d;  
+    color: #000049;
+    }
+    87.5% {
+    background-color: #ffd891;
+    color: #310049;
+    }
+    100% {
+    background-color: #ffa2a2;
+    color: #53002c;
+    }
+}
+
+h1 {
+    margin-bottom: 52px;
+    font-size: 24px;
+    color: #470000;
+    animation: textColor 5s infinite linear;
+}
+@keyframes textColor {
+  12.5% {
+    color: #470000;
+  }
+  25% {
+    color: #805300;
+  }
+  37.5% {
+    color: #696900;
+  }
+  50% {
+    color: #336600;
+  }
+  62.5% {
+    color: #005757;
+  }
+  75% {
+    color: #000049;
+  }
+  87.5% {
+    color: #310049;
+  }
+  100% {
+    color: #53002c;
+  }
+}
+
+p {
+    font-weight: 100;
+}
+
+.bodyContainer {
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+.windowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 52px;
+    padding: 52px;
+    border-style: solid;
+    border-color: #580000;;
+    border-width: 1px;
+    border-radius: 12px;
+    background-color: #ffbcbc;
+    animation: bgColor 5s infinite linear;
+}
+@keyframes bgColor {
+    12.5% {
+    background-color: #ffa2a2;
+    }
+    25% {
+    background-color: #ffd891;
+    }
+    37.5% {
+    background-color: #ffff9d;
+    }
+    50% {
+    background-color: #ccff99;
+    }
+    62.5% {
+    background-color: #b1ffff;
+    }
+    75% {
+    background-color: #b3b3ff;
+    }
+    87.5% {
+    background-color: #e7b8ff;
+    }
+    100% {
+    background-color: #ffb0da;
+    }
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+}
+
+.results {
+    padding: 24px;
+    text-align: center;
+}
+
